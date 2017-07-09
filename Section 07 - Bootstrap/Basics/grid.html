@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boostrap Grid System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+		.red {
+			background: red;
+			border: 1px dashed orange;
+			height: 50px;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- ==================================== -->
+<!--              OBJECTIVES              -->
+<!-- 1. Understand purpose of grid system -->
+<!-- 2. Understand the 4 different sizes  -->
+<!-- 3. Write nested grids                -->
+<!-- ==================================== -->
+<!-- xs smartphone; sm tablet; md medium; lg large screen laptop/pc
+12 colums total -->
+
+<div class="container">
+<!-- 	<div class="row">
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+	</div> -->
+
+	<div class="row">
+	<!-- If lg and md are same, you don't need to specify lg -->
+		<div class="col-md-3 col-sm-6 pink">
+		<!-- Nested grid of 2 elements, split into columns of 6 each. -->
+			<div class="row">
+				<div class="col-lg-6 red">TEXT HERE</div>
+				<div class="col-lg-6 red">TEXT 2HERE</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6 pink">TOUR DATE</div>
+		<div class="col-md-3 col-sm-6 pink">TOUR DATE</div>
+		<div class="col-md-3 col-sm-6 pink">
+		<!-- Nested grid of 6 elements, split into columns of 2 each -->
+			<div class="row">
+				<div class="col-lg-2 red"></div>
+				<div class="col-lg-2 red"></div>
+				<div class="col-lg-2 red"></div>
+				<div class="col-lg-2 red"></div>
+				<div class="col-lg-2 red"></div>
+				<div class="col-lg-2 red"></div>
+			</div>
+		</div>
+
+	</div><!--  Div main row end -->
+</div> <!-- Div container end -->
+
+</body>
+</html>
